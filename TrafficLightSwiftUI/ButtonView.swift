@@ -10,10 +10,10 @@ import SwiftUI
 struct ButtonView: View {
     
     let title: String
-    let completion: () -> Void
+    let condition: () -> Void
     
     var body: some View {
-        Button(action: { completion() }) {
+        Button(action: { condition() }) {
             Text(title)
                 .font(.largeTitle)
                 .foregroundColor(.white)
